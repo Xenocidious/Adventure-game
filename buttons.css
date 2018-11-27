@@ -1,0 +1,35 @@
+.container{
+    height: 600px;
+    width: 600px;
+    border: solid 1px;
+    background-image: url("images/bg0.jpg");
+    margin-right: 200px;
+}
+.bg1{
+    height: 600px;
+    width: 600px;
+    border: solid 1px;
+    background-image: url("images/bg1.jpg");
+}
+.bg2{
+    height: 600px;
+    width: 600px;
+    border: solid 1px;
+    background-image: url("images/bg2.jpg");
+}
+.bg3{
+    height: 600px;
+    width: 600px;
+    border: solid 1px;
+    background-image: url("images/bg3.jpg");
+}
+.buttons {
+    background-color: green;
+    border: none;
+    width: 45px;
+    height: 45px;
+}
+#smallimg{
+    float: right;
+    margin-top: 440px;
+}
