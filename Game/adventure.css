@@ -1,0 +1,46 @@
+#game-container{
+    height: 600px;
+    width: 1000px;
+    border: solid 1px;
+    text-align: center;
+    background-image: url("image/startscreen.jpg");
+    background-size: 1000px 600px;
+}
+#title{
+    margin-top: 25px;
+    background-color: white;
+    width: 570px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+#description{
+
+}
+#game-buttons{
+    margin-top: 20px;
+}
+#button1{
+    border: none;
+    margin-top: 400px;
+    margin-bottom: 400px;
+    background-image: url("image/start.png");
+    background-size: 225px 75px;
+    width: 225px;
+    height: 75px;
+    border-radius: 50px;
+}
+#button2{
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+}
+#button3{
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+}
+.invItem{
+    
+}
