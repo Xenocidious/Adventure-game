@@ -1,10 +1,10 @@
-/*Opdracht 1*/ /*
+/*Opdracht 1*/ 
 var weekdagen = ["maandag"," dinsdag"," woensdag"," donderdag"," vrijdag"," zaterdag"," zondag."];
 var werkdagen = ["maandag"," dinsdag"," woensdag"," donderdag"," vrijdag."];
 var weekenddagen = ["zaterdag"," zondag."];
 var oweekdagen = ["zondag"," zaterdag"," vrijdag"," donderdag"," woensdag"," dinsdag"," maandag."];;
 var owerkdagen = ["vrijdag"," donderdag"," woensdag"," dinsdag"," maandag."];
-var oweekenddagen = ["zondag"," zaterdag."]; */
+var oweekenddagen = ["zondag"," zaterdag."]; 
 
 
 
@@ -118,7 +118,7 @@ function piramide(){
         document.write("<br>")
     }
 } */
-/*Opdracht 7*/
+/*Opdracht 7*/ /*
 var array = ["bier","wijn","fris","8bb","16bb"];
-var input = prompt(Welke bestelling wilt u toevoegen);
+var input = prompt(Welke bestelling wilt u toevoegen); --> */
 

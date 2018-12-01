@@ -1,7 +1,6 @@
 #game-container{
     height: 600px;
     width: 1000px;
-    border: solid 1px;
     text-align: center;
     background-image: url("image/startscreen.jpg");
     background-size: 1000px 600px;

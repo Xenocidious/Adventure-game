@@ -1,11 +1,11 @@
-var buttom1 = document.getElementById('button1');
+var button1 = document.getElementById('button1');
 var button2 = document.getElementById('button2');
 var button3 = document.getElementById('button3');
 var item = document.getElementById('inventoryItem');
 var desc = document.getElementById('description');
 var title = document.getElementById('title');
-var invItem = document.getElementById('inventoryItem')
-var inventory ={"crowbar":false,"lighter":false,"explosives":false}
+var invItem = document.getElementById('inventoryItem');
+var inventoryItem ={"crowbar":false,"lighter":false,"explosives":false};
 
 button1.innerHTML = "";
 button2.innerHTML = "";
@@ -13,10 +13,7 @@ button3.innerHTML = "";
 
 start();
 
-function crowbar() {
-    inventory ={"crowbar":true}
-    invItem.style.display = "none";
-}
+
 function start() {
     title.innerHTML = "";
     button1.style.display = "";
@@ -69,11 +66,13 @@ function lvl2() {
     button3.style.display = "none";
     title.style.width = "870px";
     button1.innerHTML = "Continue"
-    document.getElementById("inventoryItem").src = "image/crowbar.png";
+    document.getElementById("inventoryItem").src = "image/halfcrowbar.png";
     invItem.style.display = "";
+    invItem.style.marginTop = "-141px";
+    invItem.style.marginLeft = "588px";
 
     button1.onclick = lvl3;
-    invItem.onclick = crowbar;     
+    invItem.onclick = functCrowbar;     
 }
 function lvl2v2() {
     document.getElementById("game-container").style.backgroundImage = "url('image/doorway.jpg')";
@@ -83,11 +82,14 @@ function lvl2v2() {
     button2.style.display = "none";
     button3.style.display = "none";
     title.style.width = "560px";
-    button1.innerHTML = "Continue"
-    inventoryItem.src = "image/crowbar.png";
+    button1.innerHTML = "Continue";
+    inventoryItem.src = "image/halfcrowbar.png";
     invItem.style.display = "";
+    invItem.style.marginTop = "-140px";
+    invItem.style.marginLeft = "570px";
 
     button1.onclick = lvl3;
+    invItem.onclick = functCrowbar;
 }
 function lvl2v2noItem() {
     document.getElementById("game-container").style.backgroundImage = "url('image/doorway.jpg')";
@@ -117,10 +119,11 @@ function lvl3() {
 
     button1.onclick = lvl4;
     button3.onclick = lvl5;
-    if (crowbar = true) {
+
+    if (inventoryItem['crowbar'] == true) {
         button2.onclick = lvl2v2noItem;
     }
-    else if (crowbar = false) {
+    else if (inventoryItem['crowbar'] == false) {
         button2.onclick = lvl2v2;
     }
 }
@@ -135,6 +138,27 @@ function lvl4() {
     title.style.width = "370px";
 
     button1.onclick = lvl3;
+    if (inventoryItem['crowbar'] == true) {
+        button2.onclick = lvl4v2;
+        button2.style.display = "";
+        button2.innerHTML = "Open it";
+    }
+}
+function lvl4v2() {
+    document.getElementById("game-container").style.backgroundImage = "url('image/coffin.jpg')";
+    title.innerHTML = "You used the crowbar to open the sarcophagus," + "<br>" + "You found a bunch of explosives in there.";
+
+    button1.style.display = "";
+    button2.style.display = "none";
+    button3.style.display = "none";
+    button1.innerHTML = "Go back";
+    title.style.width = "660px";
+    document.getElementById("inventoryItem").src = "image/explosives.png";
+    invItem.style.display = "";
+
+
+    button1.onclick = lvl3;
+    invItem.onclick = functExplosives;
 }
 function lvl5() {
 
@@ -147,5 +171,13 @@ function sanddeath() {
     button2.style.display = "none";
     button3.style.display = "none";
     title.style.width = "775px";
+    invItem.style.display = "none";
+}
+function functCrowbar() {
+    inventoryItem["crowbar"]=true;
+    invItem.style.display = "none";
+}
+function functExplosives() {
+    inventoryItem["explosives"]=true;
     invItem.style.display = "none";
 }
