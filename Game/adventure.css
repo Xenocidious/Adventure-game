@@ -20,7 +20,6 @@
 }
 #button1{
     border: none;
-
 }
 #button1:hover{
     background-color: black;
@@ -31,7 +30,6 @@
     width: 100px;
     height: 40px;
     border-radius: 50px;
-
 }
 #button2:hover{
     background-color: black;
@@ -42,7 +40,6 @@
     width: 100px;
     height: 40px;
     border-radius: 50px;
-
 }
 #button3:hover{
     background-color: black;
@@ -53,7 +50,6 @@
     width: 100px;
     height: 40px;
     border-radius: 50px;
-
 }
 #button4:hover{
     background-color: black;
