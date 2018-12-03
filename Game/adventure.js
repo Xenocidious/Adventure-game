@@ -433,7 +433,13 @@ function treasure() {
 
     button1.onclick = escape1;
     button2.onclick = lvl6;
-    invItem.onclick = functStatue;
+
+    if (inventoryItem['explosives'] == true) {
+        invItem.onclick = carryExplosives;
+    }
+    else if (inventoryItem['explosives'] == false) {
+        invItem.onclick = statue;
+    }
 }
 function escape1() {
     container.style.backgroundImage = "url('image/treasureroom.jpg')";
@@ -479,6 +485,7 @@ function sanddeath() {
     inventoryItem["explosives"]=false;
     inventoryItem["scroll"]=false;
     inventoryItem["key"]=false;
+    inventoryItem["statue"]=false;
 }
 function explosiondeath() {
     container.style.backgroundImage = "url('image/explode.jpg')";
@@ -503,6 +510,7 @@ function explosiondeath() {
     inventoryItem["explosives"]=false;
     inventoryItem["scroll"]=false;
     inventoryItem["key"]=false;
+    inventoryItem["statue"]=false;
 }
 function spikedeath() {
     container.style.backgroundImage = "url('image/spikepit.jpg')";
@@ -527,6 +535,7 @@ function spikedeath() {
     inventoryItem["explosives"]=false;
     inventoryItem["scroll"]=false;
     inventoryItem["key"]=false;
+    inventoryItem["statue"]=false;
 }
 function snakedeath() {
     container.style.backgroundImage = "url('image/snakepit.jpg')";
@@ -551,6 +560,7 @@ function snakedeath() {
     inventoryItem["explosives"]=false;
     inventoryItem["scroll"]=false;
     inventoryItem["key"]=false;
+    inventoryItem["statue"]=false;
 }
 function puzzlespikedeath() {
     container.style.backgroundImage = "url('image/spikepit.jpg')";
@@ -575,6 +585,7 @@ function puzzlespikedeath() {
     inventoryItem["explosives"]=false;
     inventoryItem["scroll"]=false;
     inventoryItem["key"]=false;
+    inventoryItem["statue"]=false;
 }
 function functCrowbar() {
     inventoryItem["crowbar"]=true;
@@ -595,4 +606,10 @@ function functKey() {
 function functStatue() {
     inventoryItem["statue"]=true;
     invItem.style.display = "none";
+}
+function carryExplosives() {
+    alert("You are already carrying explosives.")
+}
+function carryStatue() {
+    alert("You are already carrying a statue.")
 }
