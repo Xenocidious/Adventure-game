@@ -50,6 +50,7 @@ function lvl1() {
     button2.innerHTML = "Leave";
     invItem.style.display = "none";
     button1.style.borderRadius = "50px";
+    button1.style.transition = "0.3s"
 
     button1.onclick = lvl2;
     button2.onclick = lvl0;
@@ -240,6 +241,7 @@ function lvl6() {
     button4.innerHTML = "Go right";
     invItem.style.display = "none";
     button2.style.width = "100px";
+    invItem.style.marginRight = "0px";
 
     button1.onclick = spikedeath;
     button2.onclick = lvl7;
@@ -254,7 +256,7 @@ function lvl7() {
     button2.style.display = "none";
     button3.style.display = "none";
     button4.style.display = "none";
-    title.style.width = "330px";
+    title.style.width = "400px";
     button1.innerHTML = "Go back";
     button2.innerHTML = "Place explosives";
     button3.innerHTML = "";

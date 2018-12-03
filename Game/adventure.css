@@ -20,24 +20,44 @@
 }
 #button1{
     border: none;
+
+}
+#button1:hover{
+    background-color: black;
+    color: white;
 }
 #button2{
     border: none;
     width: 100px;
     height: 40px;
     border-radius: 50px;
+
+}
+#button2:hover{
+    background-color: black;
+    color: white;
 }
 #button3{
     border: none;
     width: 100px;
     height: 40px;
     border-radius: 50px;
+
+}
+#button3:hover{
+    background-color: black;
+    color: white;
 }
 #button4{
     border: none;
     width: 100px;
     height: 40px;
     border-radius: 50px;
+
+}
+#button4:hover{
+    background-color: black;
+    color: white;
 }
 .invItem{
     
