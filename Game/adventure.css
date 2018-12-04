@@ -8,12 +8,15 @@
 #title{
     margin-top: 25px;
     background-color: white;
-    width: 570px;
     border-radius: 15px;
     margin: 0 auto;
 }
 #description{
-
+    margin-top: 25px;
+    background-color: red;
+    width: 200px;
+    border-radius: 15px;
+    margin: auto;
 }
 #game-buttons{
     margin-top: 20px;
